@@ -7,11 +7,11 @@ import { StdCheats } from "forge-std/StdCheats.sol";
 import "../../src/ERC20-1/MyToken.sol";
 
 contract TestERC201 is PRBTest, StdCheats {
-    MyToken myToken;
-    address owner;
-    address user1;
-    address user2;
-    address user3;
+    MyToken public myToken;
+    address public owner;
+    address public user1;
+    address public user2;
+    address public user3;
 
     uint256 constant DEPLOYER_MINT = 100_000;
     uint256 constant USER_MINT = 5000;
